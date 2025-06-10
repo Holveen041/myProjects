@@ -4,6 +4,9 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
+if (!globalThis.fetch) {
+  globalThis.fetch = require('node-fetch');
+}
 
 const app = express();
 const PORT = 3000;
