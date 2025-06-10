@@ -1,0 +1,144 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1; /* Занимает всё доступное пространство */
+}
+
+.password-checker {
+    width: 100%;
+    flex: 1; /* Растягивается на всё свободное место */
+}
+
+.admin-panel {
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #bb86fc;
+    margin-top: auto; /* Прижимает к низу */
+}
+
+/* Остальные стили остаются без изменений */
+h1, h2 {
+    color: #bb86fc;
+    margin-top: 0;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 2px solid #bb86fc;
+    padding: 12px 15px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-group input {
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+}
+
+.input-group button {
+    border-radius: 0 5px 5px 0;
+}
+
+button {
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #9a67ea;
+}
+
+button.success {
+    background-color: #4caf50 !important;
+}
+
+button.error {
+    background-color: #f44336 !important;
+}
+
+.hint {
+    background-color: #1e1e1e;
+    border-left: 4px solid #bb86fc;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 0 5px 5px 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.hint-visible {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 300px;
+}
+
+.hint-title {
+    color: #bb86fc;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.hint-text {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.admin-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.admin-inputs input {
+    border-radius: 5px;
+}
+
+.admin-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-buttons button {
+    flex: 1;
+    border-radius: 5px;
+}

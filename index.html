@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система паролей</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="password-checker">
+            <h1>Введите код для получения подсказки</h1>
+            <div class="input-group">
+                <input type="text" id="codeInput" placeholder="Введите пароль">
+                <button id="checkBtn">Проверить</button>
+            </div>
+            <div id="hintContainer" class="hint">
+                <h3 class="hint-title">Подсказка:</h3>
+                <p class="hint-text" id="hintText"></p>
+            </div>
+        </div>
+
+        <div class="admin-panel">
+            <h2>Админ-панель</h2>
+            <div class="admin-inputs">
+                <input type="password" id="adminPassInput" placeholder="Пароль админа">
+                <input type="text" id="newPassInput" placeholder="Новый пароль">
+                <input type="text" id="newHintInput" placeholder="Подсказка для пароля">
+            </div>
+            <div class="admin-buttons">
+                <button id="addBtn">Добавить</button>
+                <button id="removeBtn">Удалить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
