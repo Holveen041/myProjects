@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель | Система паролей</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="passwordPrompt" class="password-prompt">
+        <div class="prompt-container">
+            <h2>Введите пароль админа</h2>
+            <input type="password" id="loginPassword" placeholder="Пароль админа">
+            <button id="loginBtn">Войти</button>
+            <p id="loginError" class="error-message"></p>
+        </div>
+    </div>
+
+    <div id="adminPanel" class="admin-panel hidden">
+        <h1>Админ-панель</h1>
+        <div class="admin-inputs">
+            <input type="text" id="newPassInput" placeholder="Новый пароль">
+            <input type="text" id="newHintInput" placeholder="Подсказка для пароля">
+        </div>
+        <div class="admin-buttons">
+            <button id="addBtn">Добавить</button>
+            <button id="removeBtn">Удалить</button>
+        </div>
+        <div class="back-link">
+            <a href="index.html">← Вернуться к проверке пароля</a>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
